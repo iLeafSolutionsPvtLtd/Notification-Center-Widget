@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>TimesNewRomanPSMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_bulb" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-0J-ty4">
+                                <rect key="frame" x="136" y="203" width="102" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="FxC-8E-j1O"/>
+                                    <constraint firstAttribute="width" constant="102" id="J6p-MC-vK3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdz-iC-oNd">
+                                <rect key="frame" x="110.5" y="319.5" width="154.5" height="28"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyrights © 2017 iLeaf Solutions Pvt. Ltd." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pvm-5V-KeU">
+                                <rect key="frame" x="0.0" y="647.5" width="375" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pvm-5V-KeU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Bh3-DP-bsv"/>
+                            <constraint firstItem="qdz-iC-oNd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SIo-Il-d7M"/>
+                            <constraint firstAttribute="trailing" secondItem="pvm-5V-KeU" secondAttribute="trailing" id="WMa-72-P92"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="pvm-5V-KeU" secondAttribute="bottom" id="Zg1-of-9nv"/>
+                            <constraint firstItem="CQz-0J-ty4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mcW-HW-8Zb"/>
+                            <constraint firstItem="qdz-iC-oNd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pkf-mI-0yJ"/>
+                            <constraint firstItem="qdz-iC-oNd" firstAttribute="top" secondItem="CQz-0J-ty4" secondAttribute="bottom" constant="27.5" id="wkb-Jj-OGe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon_bulb" width="249" height="193"/>
+    </resources>
+</document>

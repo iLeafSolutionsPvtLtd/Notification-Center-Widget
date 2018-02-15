@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3247351E1FE25EA10002C221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247351D1FE25EA10002C221 /* AppDelegate.swift */; };
+		324735231FE25EA10002C221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324735211FE25EA10002C221 /* Main.storyboard */; };
+		324735261FE25EA10002C221 /* SharedCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 324735241FE25EA10002C221 /* SharedCoreData.xcdatamodeld */; };
+		324735281FE25EA10002C221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324735271FE25EA10002C221 /* Assets.xcassets */; };
+		3247352B1FE25EA10002C221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324735291FE25EA10002C221 /* LaunchScreen.storyboard */; };
+		324735361FE25EA20002C221 /* SharedCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324735351FE25EA20002C221 /* SharedCoreDataTests.swift */; };
+		324735411FE25EA20002C221 /* SharedCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324735401FE25EA20002C221 /* SharedCoreDataUITests.swift */; };
+		324735551FE26E580002C221 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324735541FE26E580002C221 /* NotificationCenter.framework */; };
+		324735581FE26E580002C221 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324735571FE26E580002C221 /* TodayViewController.swift */; };
+		3247355B1FE26E580002C221 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324735591FE26E580002C221 /* MainInterface.storyboard */; };
+		3247355F1FE26E580002C221 /* SCDWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 324735521FE26E580002C221 /* SCDWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3253248D1FE8E049000DAAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324735271FE25EA10002C221 /* Assets.xcassets */; };
+		3253248E1FE8E0D3000DAAE8 /* Facts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BE141FE7F662007E0114 /* Facts+CoreDataProperties.swift */; };
+		3253248F1FE8E0D6000DAAE8 /* Facts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BE131FE7F662007E0114 /* Facts+CoreDataClass.swift */; };
+		3256BD4E1FE7BAA70089A06C /* SharedCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 324735241FE25EA10002C221 /* SharedCoreData.xcdatamodeld */; };
+		327182541FE3879700B8542B /* SCDCoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327182531FE3879700B8542B /* SCDCoreDataWrapper.swift */; };
+		3278BDFE1FE7D04A007E0114 /* JBDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDEF1FE7D04A007E0114 /* JBDate.swift */; };
+		3278BDFF1FE7D04A007E0114 /* JBDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF01FE7D04A007E0114 /* JBDateExtension.swift */; };
+		3278BE001FE7D04A007E0114 /* JBDatePickerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF11FE7D04A007E0114 /* JBDatePickerContentVC.swift */; };
+		3278BE011FE7D04A007E0114 /* JBDatePickerDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF21FE7D04A007E0114 /* JBDatePickerDayView.swift */; };
+		3278BE021FE7D04A007E0114 /* JBDatePickerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF31FE7D04A007E0114 /* JBDatePickerEnums.swift */; };
+		3278BE031FE7D04A007E0114 /* JBDatePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF41FE7D04A007E0114 /* JBDatePickerManager.swift */; };
+		3278BE041FE7D04A007E0114 /* JBDatePickerMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF51FE7D04A007E0114 /* JBDatePickerMonthView.swift */; };
+		3278BE051FE7D04A007E0114 /* JBDatePickerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF61FE7D04A007E0114 /* JBDatePickerSelectionView.swift */; };
+		3278BE061FE7D04A007E0114 /* JBDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF71FE7D04A007E0114 /* JBDatePickerView.swift */; };
+		3278BE071FE7D04A007E0114 /* JBDatePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF81FE7D04A007E0114 /* JBDatePickerViewDelegate.swift */; };
+		3278BE081FE7D04A007E0114 /* JBDatePickerWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDF91FE7D04A007E0114 /* JBDatePickerWeekDaysView.swift */; };
+		3278BE091FE7D04A007E0114 /* JBDatePickerWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDFA1FE7D04A007E0114 /* JBDatePickerWeekView.swift */; };
+		3278BE0A1FE7D04A007E0114 /* JBFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BDFB1FE7D04A007E0114 /* JBFont.swift */; };
+		3278BE0B1FE7D04A007E0114 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3278BDFC1FE7D04A007E0114 /* Info.plist */; };
+		3278BE0E1FE7F46D007E0114 /* DidYouKnowFacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 3278BE0D1FE7F46D007E0114 /* DidYouKnowFacts.json */; };
+		3278BE151FE7F662007E0114 /* Facts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BE131FE7F662007E0114 /* Facts+CoreDataClass.swift */; };
+		3278BE161FE7F662007E0114 /* Facts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BE141FE7F662007E0114 /* Facts+CoreDataProperties.swift */; };
+		3278BE181FE7FF04007E0114 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3278BE171FE7FF04007E0114 /* HomeViewController.swift */; };
+		32F2FE1A1FE3C85600D7098E /* SCDFactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FE191FE3C85600D7098E /* SCDFactModel.swift */; };
+		32F2FE211FE3E4EA00D7098E /* SCDCoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327182531FE3879700B8542B /* SCDCoreDataWrapper.swift */; };
+		32F2FE231FE3E51600D7098E /* SCDFactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FE191FE3C85600D7098E /* SCDFactModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		324735321FE25EA20002C221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324735121FE25EA10002C221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324735191FE25EA10002C221;
+			remoteInfo = SharedCoreData;
+		};
+		3247353D1FE25EA20002C221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324735121FE25EA10002C221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324735191FE25EA10002C221;
+			remoteInfo = SharedCoreData;
+		};
+		3247355D1FE26E580002C221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324735121FE25EA10002C221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324735511FE26E580002C221;
+			remoteInfo = SCDWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		324735631FE26E580002C221 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3247355F1FE26E580002C221 /* SCDWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3247351A1FE25EA10002C221 /* SharedCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharedCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3247351D1FE25EA10002C221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		324735221FE25EA10002C221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		324735251FE25EA10002C221 /* SharedCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SharedCoreData.xcdatamodel; sourceTree = "<group>"; };
+		324735271FE25EA10002C221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3247352A1FE25EA10002C221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3247352C1FE25EA10002C221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324735311FE25EA20002C221 /* SharedCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		324735351FE25EA20002C221 /* SharedCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCoreDataTests.swift; sourceTree = "<group>"; };
+		324735371FE25EA20002C221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3247353C1FE25EA20002C221 /* SharedCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		324735401FE25EA20002C221 /* SharedCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCoreDataUITests.swift; sourceTree = "<group>"; };
+		324735421FE25EA20002C221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324735521FE26E580002C221 /* SCDWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCDWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		324735541FE26E580002C221 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		324735571FE26E580002C221 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3247355A1FE26E580002C221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3247355C1FE26E580002C221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324735641FE2708C0002C221 /* SharedCoreData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharedCoreData.entitlements; sourceTree = "<group>"; };
+		324735651FE270B90002C221 /* SCDWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SCDWidget.entitlements; sourceTree = "<group>"; };
+		327182531FE3879700B8542B /* SCDCoreDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCDCoreDataWrapper.swift; sourceTree = "<group>"; };
+		3278BDEF1FE7D04A007E0114 /* JBDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDate.swift; sourceTree = "<group>"; };
+		3278BDF01FE7D04A007E0114 /* JBDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDateExtension.swift; sourceTree = "<group>"; };
+		3278BDF11FE7D04A007E0114 /* JBDatePickerContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerContentVC.swift; sourceTree = "<group>"; };
+		3278BDF21FE7D04A007E0114 /* JBDatePickerDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerDayView.swift; sourceTree = "<group>"; };
+		3278BDF31FE7D04A007E0114 /* JBDatePickerEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerEnums.swift; sourceTree = "<group>"; };
+		3278BDF41FE7D04A007E0114 /* JBDatePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerManager.swift; sourceTree = "<group>"; };
+		3278BDF51FE7D04A007E0114 /* JBDatePickerMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerMonthView.swift; sourceTree = "<group>"; };
+		3278BDF61FE7D04A007E0114 /* JBDatePickerSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerSelectionView.swift; sourceTree = "<group>"; };
+		3278BDF71FE7D04A007E0114 /* JBDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerView.swift; sourceTree = "<group>"; };
+		3278BDF81FE7D04A007E0114 /* JBDatePickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerViewDelegate.swift; sourceTree = "<group>"; };
+		3278BDF91FE7D04A007E0114 /* JBDatePickerWeekDaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerWeekDaysView.swift; sourceTree = "<group>"; };
+		3278BDFA1FE7D04A007E0114 /* JBDatePickerWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerWeekView.swift; sourceTree = "<group>"; };
+		3278BDFB1FE7D04A007E0114 /* JBFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBFont.swift; sourceTree = "<group>"; };
+		3278BDFC1FE7D04A007E0114 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3278BDFD1FE7D04A007E0114 /* JBDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBDatePicker.h; sourceTree = "<group>"; };
+		3278BE0D1FE7F46D007E0114 /* DidYouKnowFacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DidYouKnowFacts.json; sourceTree = "<group>"; };
+		3278BE131FE7F662007E0114 /* Facts+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Facts+CoreDataClass.swift"; path = "../../Facts+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3278BE141FE7F662007E0114 /* Facts+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Facts+CoreDataProperties.swift"; path = "../../Facts+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3278BE171FE7FF04007E0114 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		32F2FE191FE3C85600D7098E /* SCDFactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCDFactModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		324735171FE25EA10002C221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247352E1FE25EA20002C221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324735391FE25EA20002C221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247354F1FE26E580002C221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324735551FE26E580002C221 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324735111FE25EA10002C221 = {
+			isa = PBXGroup;
+			children = (
+				3247351C1FE25EA10002C221 /* SharedCoreData */,
+				324735341FE25EA20002C221 /* SharedCoreDataTests */,
+				3247353F1FE25EA20002C221 /* SharedCoreDataUITests */,
+				324735561FE26E580002C221 /* SCDWidget */,
+				324735531FE26E580002C221 /* Frameworks */,
+				3247351B1FE25EA10002C221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3247351B1FE25EA10002C221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3247351A1FE25EA10002C221 /* SharedCoreData.app */,
+				324735311FE25EA20002C221 /* SharedCoreDataTests.xctest */,
+				3247353C1FE25EA20002C221 /* SharedCoreDataUITests.xctest */,
+				324735521FE26E580002C221 /* SCDWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3247351C1FE25EA10002C221 /* SharedCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3256BD4F1FE7C4B30089A06C /* DatePicker */,
+				324735661FE2A1360002C221 /* DataManager */,
+				324735641FE2708C0002C221 /* SharedCoreData.entitlements */,
+				3247351D1FE25EA10002C221 /* AppDelegate.swift */,
+				324735211FE25EA10002C221 /* Main.storyboard */,
+				324735271FE25EA10002C221 /* Assets.xcassets */,
+				324735291FE25EA10002C221 /* LaunchScreen.storyboard */,
+				3247352C1FE25EA10002C221 /* Info.plist */,
+				3278BE0D1FE7F46D007E0114 /* DidYouKnowFacts.json */,
+				324735241FE25EA10002C221 /* SharedCoreData.xcdatamodeld */,
+				3278BE171FE7FF04007E0114 /* HomeViewController.swift */,
+			);
+			path = SharedCoreData;
+			sourceTree = "<group>";
+		};
+		324735341FE25EA20002C221 /* SharedCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				324735351FE25EA20002C221 /* SharedCoreDataTests.swift */,
+				324735371FE25EA20002C221 /* Info.plist */,
+			);
+			path = SharedCoreDataTests;
+			sourceTree = "<group>";
+		};
+		3247353F1FE25EA20002C221 /* SharedCoreDataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				324735401FE25EA20002C221 /* SharedCoreDataUITests.swift */,
+				324735421FE25EA20002C221 /* Info.plist */,
+			);
+			path = SharedCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		324735531FE26E580002C221 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				324735541FE26E580002C221 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		324735561FE26E580002C221 /* SCDWidget */ = {
+			isa = PBXGroup;
+			children = (
+				324735651FE270B90002C221 /* SCDWidget.entitlements */,
+				324735571FE26E580002C221 /* TodayViewController.swift */,
+				324735591FE26E580002C221 /* MainInterface.storyboard */,
+				3247355C1FE26E580002C221 /* Info.plist */,
+			);
+			path = SCDWidget;
+			sourceTree = "<group>";
+		};
+		324735661FE2A1360002C221 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3278BE131FE7F662007E0114 /* Facts+CoreDataClass.swift */,
+				3278BE141FE7F662007E0114 /* Facts+CoreDataProperties.swift */,
+				327182531FE3879700B8542B /* SCDCoreDataWrapper.swift */,
+				32F2FE191FE3C85600D7098E /* SCDFactModel.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		3256BD4F1FE7C4B30089A06C /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				3278BDED1FE7D04A007E0114 /* JBDatePicker */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		3278BDED1FE7D04A007E0114 /* JBDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				3278BDEE1FE7D04A007E0114 /* Classes */,
+				3278BDFC1FE7D04A007E0114 /* Info.plist */,
+				3278BDFD1FE7D04A007E0114 /* JBDatePicker.h */,
+			);
+			path = JBDatePicker;
+			sourceTree = "<group>";
+		};
+		3278BDEE1FE7D04A007E0114 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3278BDEF1FE7D04A007E0114 /* JBDate.swift */,
+				3278BDF01FE7D04A007E0114 /* JBDateExtension.swift */,
+				3278BDF11FE7D04A007E0114 /* JBDatePickerContentVC.swift */,
+				3278BDF21FE7D04A007E0114 /* JBDatePickerDayView.swift */,
+				3278BDF31FE7D04A007E0114 /* JBDatePickerEnums.swift */,
+				3278BDF41FE7D04A007E0114 /* JBDatePickerManager.swift */,
+				3278BDF51FE7D04A007E0114 /* JBDatePickerMonthView.swift */,
+				3278BDF61FE7D04A007E0114 /* JBDatePickerSelectionView.swift */,
+				3278BDF71FE7D04A007E0114 /* JBDatePickerView.swift */,
+				3278BDF81FE7D04A007E0114 /* JBDatePickerViewDelegate.swift */,
+				3278BDF91FE7D04A007E0114 /* JBDatePickerWeekDaysView.swift */,
+				3278BDFA1FE7D04A007E0114 /* JBDatePickerWeekView.swift */,
+				3278BDFB1FE7D04A007E0114 /* JBFont.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		324735191FE25EA10002C221 /* SharedCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324735451FE25EA20002C221 /* Build configuration list for PBXNativeTarget "SharedCoreData" */;
+			buildPhases = (
+				324735161FE25EA10002C221 /* Sources */,
+				324735171FE25EA10002C221 /* Frameworks */,
+				324735181FE25EA10002C221 /* Resources */,
+				324735631FE26E580002C221 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3247355E1FE26E580002C221 /* PBXTargetDependency */,
+			);
+			name = SharedCoreData;
+			productName = SharedCoreData;
+			productReference = 3247351A1FE25EA10002C221 /* SharedCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		324735301FE25EA20002C221 /* SharedCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324735481FE25EA20002C221 /* Build configuration list for PBXNativeTarget "SharedCoreDataTests" */;
+			buildPhases = (
+				3247352D1FE25EA20002C221 /* Sources */,
+				3247352E1FE25EA20002C221 /* Frameworks */,
+				3247352F1FE25EA20002C221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				324735331FE25EA20002C221 /* PBXTargetDependency */,
+			);
+			name = SharedCoreDataTests;
+			productName = SharedCoreDataTests;
+			productReference = 324735311FE25EA20002C221 /* SharedCoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3247353B1FE25EA20002C221 /* SharedCoreDataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3247354B1FE25EA20002C221 /* Build configuration list for PBXNativeTarget "SharedCoreDataUITests" */;
+			buildPhases = (
+				324735381FE25EA20002C221 /* Sources */,
+				324735391FE25EA20002C221 /* Frameworks */,
+				3247353A1FE25EA20002C221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3247353E1FE25EA20002C221 /* PBXTargetDependency */,
+			);
+			name = SharedCoreDataUITests;
+			productName = SharedCoreDataUITests;
+			productReference = 3247353C1FE25EA20002C221 /* SharedCoreDataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		324735511FE26E580002C221 /* SCDWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324735601FE26E580002C221 /* Build configuration list for PBXNativeTarget "SCDWidget" */;
+			buildPhases = (
+				3247354E1FE26E580002C221 /* Sources */,
+				3247354F1FE26E580002C221 /* Frameworks */,
+				324735501FE26E580002C221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCDWidget;
+			productName = SCDWidget;
+			productReference = 324735521FE26E580002C221 /* SCDWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		324735121FE25EA10002C221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = iLeaf;
+				TargetAttributes = {
+					324735191FE25EA10002C221 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y6AK6TF2DS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					324735301FE25EA20002C221 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 324735191FE25EA10002C221;
+					};
+					3247353B1FE25EA20002C221 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 324735191FE25EA10002C221;
+					};
+					324735511FE26E580002C221 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y6AK6TF2DS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 324735151FE25EA10002C221 /* Build configuration list for PBXProject "Did you know" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 324735111FE25EA10002C221;
+			productRefGroup = 3247351B1FE25EA10002C221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				324735191FE25EA10002C221 /* SharedCoreData */,
+				324735301FE25EA20002C221 /* SharedCoreDataTests */,
+				3247353B1FE25EA20002C221 /* SharedCoreDataUITests */,
+				324735511FE26E580002C221 /* SCDWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		324735181FE25EA10002C221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3278BE0B1FE7D04A007E0114 /* Info.plist in Resources */,
+				3247352B1FE25EA10002C221 /* LaunchScreen.storyboard in Resources */,
+				3278BE0E1FE7F46D007E0114 /* DidYouKnowFacts.json in Resources */,
+				324735281FE25EA10002C221 /* Assets.xcassets in Resources */,
+				324735231FE25EA10002C221 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247352F1FE25EA20002C221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247353A1FE25EA20002C221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324735501FE26E580002C221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3253248D1FE8E049000DAAE8 /* Assets.xcassets in Resources */,
+				3247355B1FE26E580002C221 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		324735161FE25EA10002C221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3278BE091FE7D04A007E0114 /* JBDatePickerWeekView.swift in Sources */,
+				3278BE151FE7F662007E0114 /* Facts+CoreDataClass.swift in Sources */,
+				324735261FE25EA10002C221 /* SharedCoreData.xcdatamodeld in Sources */,
+				3278BE051FE7D04A007E0114 /* JBDatePickerSelectionView.swift in Sources */,
+				3278BE021FE7D04A007E0114 /* JBDatePickerEnums.swift in Sources */,
+				3278BE181FE7FF04007E0114 /* HomeViewController.swift in Sources */,
+				3278BE071FE7D04A007E0114 /* JBDatePickerViewDelegate.swift in Sources */,
+				3278BE001FE7D04A007E0114 /* JBDatePickerContentVC.swift in Sources */,
+				3278BE011FE7D04A007E0114 /* JBDatePickerDayView.swift in Sources */,
+				3278BE0A1FE7D04A007E0114 /* JBFont.swift in Sources */,
+				3278BE161FE7F662007E0114 /* Facts+CoreDataProperties.swift in Sources */,
+				3278BE081FE7D04A007E0114 /* JBDatePickerWeekDaysView.swift in Sources */,
+				3278BDFE1FE7D04A007E0114 /* JBDate.swift in Sources */,
+				32F2FE1A1FE3C85600D7098E /* SCDFactModel.swift in Sources */,
+				3278BE061FE7D04A007E0114 /* JBDatePickerView.swift in Sources */,
+				3278BDFF1FE7D04A007E0114 /* JBDateExtension.swift in Sources */,
+				3278BE041FE7D04A007E0114 /* JBDatePickerMonthView.swift in Sources */,
+				327182541FE3879700B8542B /* SCDCoreDataWrapper.swift in Sources */,
+				3247351E1FE25EA10002C221 /* AppDelegate.swift in Sources */,
+				3278BE031FE7D04A007E0114 /* JBDatePickerManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247352D1FE25EA20002C221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324735361FE25EA20002C221 /* SharedCoreDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324735381FE25EA20002C221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324735411FE25EA20002C221 /* SharedCoreDataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3247354E1FE26E580002C221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324735581FE26E580002C221 /* TodayViewController.swift in Sources */,
+				3253248F1FE8E0D6000DAAE8 /* Facts+CoreDataClass.swift in Sources */,
+				3256BD4E1FE7BAA70089A06C /* SharedCoreData.xcdatamodeld in Sources */,
+				32F2FE211FE3E4EA00D7098E /* SCDCoreDataWrapper.swift in Sources */,
+				3253248E1FE8E0D3000DAAE8 /* Facts+CoreDataProperties.swift in Sources */,
+				32F2FE231FE3E51600D7098E /* SCDFactModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		324735331FE25EA20002C221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324735191FE25EA10002C221 /* SharedCoreData */;
+			targetProxy = 324735321FE25EA20002C221 /* PBXContainerItemProxy */;
+		};
+		3247353E1FE25EA20002C221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324735191FE25EA10002C221 /* SharedCoreData */;
+			targetProxy = 3247353D1FE25EA20002C221 /* PBXContainerItemProxy */;
+		};
+		3247355E1FE26E580002C221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324735511FE26E580002C221 /* SCDWidget */;
+			targetProxy = 3247355D1FE26E580002C221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		324735211FE25EA10002C221 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324735221FE25EA10002C221 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		324735291FE25EA10002C221 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3247352A1FE25EA10002C221 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		324735591FE26E580002C221 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3247355A1FE26E580002C221 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		324735431FE25EA20002C221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		324735441FE25EA20002C221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		324735461FE25EA20002C221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SharedCoreData/SharedCoreData.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y6AK6TF2DS;
+				INFOPLIST_FILE = SharedCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ileaf.SharedCoreData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		324735471FE25EA20002C221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SharedCoreData/SharedCoreData.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y6AK6TF2DS;
+				INFOPLIST_FILE = SharedCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ileaf.SharedCoreData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		324735491FE25EA20002C221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SharedCoreDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ileaf.SharedCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharedCoreData.app/SharedCoreData";
+			};
+			name = Debug;
+		};
+		3247354A1FE25EA20002C221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SharedCoreDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ileaf.SharedCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharedCoreData.app/SharedCoreData";
+			};
+			name = Release;
+		};
+		3247354C1FE25EA20002C221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SharedCoreDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ileaf.SharedCoreDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SharedCoreData;
+			};
+			name = Debug;
+		};
+		3247354D1FE25EA20002C221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SharedCoreDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ileaf.SharedCoreDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SharedCoreData;
+			};
+			name = Release;
+		};
+		324735611FE26E580002C221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SCDWidget/SCDWidget.entitlements;
+				DEVELOPMENT_TEAM = Y6AK6TF2DS;
+				INFOPLIST_FILE = SCDWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ileaf.SharedCoreData.SCDWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		324735621FE26E580002C221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SCDWidget/SCDWidget.entitlements;
+				DEVELOPMENT_TEAM = Y6AK6TF2DS;
+				INFOPLIST_FILE = SCDWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ileaf.SharedCoreData.SCDWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		324735151FE25EA10002C221 /* Build configuration list for PBXProject "Did you know" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324735431FE25EA20002C221 /* Debug */,
+				324735441FE25EA20002C221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324735451FE25EA20002C221 /* Build configuration list for PBXNativeTarget "SharedCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324735461FE25EA20002C221 /* Debug */,
+				324735471FE25EA20002C221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324735481FE25EA20002C221 /* Build configuration list for PBXNativeTarget "SharedCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324735491FE25EA20002C221 /* Debug */,
+				3247354A1FE25EA20002C221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3247354B1FE25EA20002C221 /* Build configuration list for PBXNativeTarget "SharedCoreDataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3247354C1FE25EA20002C221 /* Debug */,
+				3247354D1FE25EA20002C221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324735601FE26E580002C221 /* Build configuration list for PBXNativeTarget "SCDWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324735611FE26E580002C221 /* Debug */,
+				324735621FE26E580002C221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		324735241FE25EA10002C221 /* SharedCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				324735251FE25EA10002C221 /* SharedCoreData.xcdatamodel */,
+			);
+			currentVersion = 324735251FE25EA10002C221 /* SharedCoreData.xcdatamodel */;
+			path = SharedCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 324735121FE25EA10002C221 /* Project object */;
+}
